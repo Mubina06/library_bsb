@@ -7,13 +7,23 @@
     android:background="#F34A84"
     tools:context=".SplashScreen">
 
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.228" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/font1"
-        android:text="REGISTRATION"
+        android:text="@string/reg"
         android:textColor="@color/white"
         android:textSize="45sp"
         android:textStyle="bold"
@@ -29,7 +39,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Your name"
+        android:hint="@string/name_"
         app:boxBackgroundColor="@color/white"
         app:boxCornerRadiusBottomEnd="20dp"
         app:boxCornerRadiusBottomStart="20dp"
@@ -61,7 +71,7 @@
         android:layout_marginHorizontal="32dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:hint="Your surname"
+        android:hint="@string/surname_"
         app:boxBackgroundColor="@color/white"
         app:boxCornerRadiusBottomEnd="20dp"
         app:boxCornerRadiusBottomStart="20dp"
@@ -91,7 +101,7 @@
         android:layout_marginHorizontal="32dp"
         android:layout_marginEnd="20dp"
         android:layout_marginStart="20dp"
-        android:hint="Phone Number"
+        android:hint="@string/number_"
         app:boxBackgroundColor="@color/white"
         app:boxCornerRadiusBottomEnd="20dp"
         app:boxCornerRadiusBottomStart="20dp"
@@ -118,7 +128,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="32dp"
-        android:hint="Card number"
+        android:hint="@string/card_"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         app:boxBackgroundColor="@color/white"
@@ -143,11 +153,11 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/next"
         android:layout_width="149dp"
         android:layout_height="51dp"
         android:backgroundTint="@color/white"
-        android:text="Button"
+        android:text="@string/next_"
         android:textColor="#F34A84"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

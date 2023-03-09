@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Library bsb</string>
+    <string name="name_">Ismingiz</string>
+    <string name="surname_">Familiyangiz</string>
+    <string name="card_">Karta raqami</string>
+    <string name="number_">Telefon raqamingiz</string>
+    <string name="next_">Keyingisi</string>
+    <string name="reg">Registratsiya</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Library bsb</string>
+    <string name="name_">Ваше имя</string>
+    <string name="surname_">Bаша фамилия</string>
+    <string name="card_">Номер карты</string>
+    <string name="number_">Номер телефона</string>
+    <string name="next_">Cледующий</string>
+    <string name="reg">Регистрация</string>
+</resources>

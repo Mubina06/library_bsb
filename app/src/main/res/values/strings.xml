@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">LibraryBsb</string>
+    <string name="app_name" translatable="false">LibraryBsb</string>
+    <string name="name_">Your name</string>
+    <string name="surname_">Your surname</string>
+    <string name="number_">Phone Number</string>
+    <string name="card_">Card number</string>
+    <string name="next_">Next</string>
+    <string name="reg">REGISTRATION</string>
 </resources>
