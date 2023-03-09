@@ -55,7 +55,8 @@ class SplashScreen : AppCompatActivity() {
 
 
         binding.next.setOnClickListener{
-
+            var intent = Intent(this, Code::class.java)
+            startActivity(intent)
         }
 
     }

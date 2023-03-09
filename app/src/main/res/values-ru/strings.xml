@@ -7,4 +7,5 @@
     <string name="number_">Номер телефона</string>
     <string name="next_">Cледующий</string>
     <string name="reg">Регистрация</string>
+    <string name="code__">Код</string>
 </resources>

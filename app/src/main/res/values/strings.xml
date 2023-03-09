@@ -6,4 +6,9 @@
     <string name="card_">Card number</string>
     <string name="next_">Next</string>
     <string name="reg">REGISTRATION</string>
+    <string name="code" />
+    <string name="code_">code</string>
+    <string name="code__">Your code</string>
+    <string name="kod">You must enter a code consisting of at least 8 characters, numbers and letters !!!</string>
+    <string name="enter">ENTER</string>
 </resources>
