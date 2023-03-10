@@ -57,6 +57,7 @@
         tools:ignore="MissingConstraints">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameEt"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
@@ -87,6 +88,7 @@
         tools:ignore="MissingConstraints">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/surnameEt"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
@@ -116,6 +118,7 @@
         tools:ignore="MissingConstraints">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/PhoneEt"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
@@ -146,6 +149,7 @@
         tools:ignore="MissingConstraints">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/CardEt"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 

@@ -11,4 +11,8 @@
     <string name="code__">Your code</string>
     <string name="kod">You must enter a code consisting of at least 8 characters, numbers and letters !!!</string>
     <string name="enter">ENTER</string>
+    <string name="hello">Hello!</string>
+    <string name="grab_a_book">Grab a book!</string>
+    <string name="search_title_genre_or_author">Search title, genre or author...</string>
+    <string name="popular_now">Popular Now</string>
 </resources>

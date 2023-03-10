@@ -8,4 +8,8 @@
     <string name="next_">Keyingisi</string>
     <string name="reg">Registratsiya</string>
     <string name="code__">Kod</string>
+    <string name="hello">Salom!</string>
+    <string name="grab_a_book">Kitob oling!</string>
+    <string name="search_title_genre_or_author">Sarlavha, janr yoki muallifni qidiring...</string>
+    <string name="popular_now">Hozir mashhur</string>
 </resources>

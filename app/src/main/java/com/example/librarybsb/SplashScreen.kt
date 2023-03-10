@@ -2,87 +2,117 @@ package com.example.librarybsb
 
 import android.R
 import android.content.Intent
+import android.content.SharedPreferences
+import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import com.example.librarybsb.databinding.ActivitySplashScreenBinding
+import com.google.gson.reflect.TypeToken
+import java.lang.reflect.Type
 import java.util.*
 import kotlin.collections.ArrayList
 import kotlin.system.exitProcess
 
 class SplashScreen : AppCompatActivity() {
+    private lateinit var getPreferences: SharedPreferences
+    private lateinit var edit: SharedPreferences.Editor
     private lateinit var binding: ActivitySplashScreenBinding
-    private var currentLanguage = "en"
-    lateinit var locale: Locale
-    private var currentLang: String? = null
+    private var list = arrayListOf<String>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySplashScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val language = ArrayList<String>()
-        language.add("Select Language")
-        language.add("English")
-        language.add("Russian")
-        language.add("Uzbek")
-        val adapter = ArrayAdapter<String>(this, R.layout.simple_list_item_1, language)
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+
+        getPreferences = getSharedPreferences("lang", MODE_PRIVATE)
+        edit = getPreferences.edit()
+
+        val lang1 = getPreferences.getString("lang", "En")
+
+        list.add("En")
+        list.add("Ru")
+        list.add("Uz")
+
+
+        val adapter = ArrayAdapter(this, R.layout.simple_spinner_item, list)
+        adapter.setDropDownViewResource(R.layout.simple_spinner_dropdown_item)
+        binding.textView.text =
+            resources.getString(com.example.librarybsb.R.string.reg)
+        binding.nameEt.hint =
+            resources.getString(com.example.librarybsb.R.string.name_)
+        binding.surnameEt.hint =
+            resources.getString(com.example.librarybsb.R.string.surname_)
+        binding.PhoneEt.hint = resources.getString(com.example.librarybsb.R.string.number_)
+        binding.CardEt.hint = resources.getString(com.example.librarybsb.R.string.card_)
+        binding.next.text = resources.getString(com.example.librarybsb.R.string.next_)
+
+
         binding.spinner.adapter = adapter
+        if (lang1 == "En") {
+            binding.spinner.setSelection(0)
+        }
+        if (lang1 == "Ru") {
+            binding.spinner.setSelection(1)
+        }
+        if (lang1 == "Uz") {
+            binding.spinner.setSelection(2)
+        }
 
-        binding.spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+        binding.spinner.onItemSelectedListener = (object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(
-                parent: AdapterView<*>,
-                view: View,
+                parent: AdapterView<*>?,
+                p1: View?,
                 position: Int,
-                id: Long
+                p3: Long
             ) {
-                when (position) {
-                    0 -> {
-                    }
-                    1 -> setLocale("en")
-                    2 -> setLocale("ru")
-                    3 -> setLocale("uz")
+                val lang = parent!!.getItemAtPosition(position).toString()
+                var languageToLoad: String? = null
 
+                when (lang) {
+                    "En" -> {
+                        languageToLoad = "en"
+                        edit.putString("lang", "En").apply()
+                    }
+                    "Ru" -> {
+                        languageToLoad = "ru"
+                        edit.putString("lang", "Ru").apply()
+                    }
+                    "Uz" -> {
+                        languageToLoad = "uz"
+                        edit.putString("lang", "Uz").apply()
+
+                    }
                 }
+                if (languageToLoad != null) {
+                    val locale = Locale(languageToLoad)
+                    Locale.setDefault(locale)
+                    val config = Configuration()
+                    config.locale = locale
+                    baseContext.resources.updateConfiguration(
+                        config,
+                        baseContext.resources.displayMetrics
+                    )
+                }
+                binding.textView.text =
+                    resources.getString(com.example.librarybsb.R.string.reg)
+                binding.nameEt.hint =
+                    resources.getString(com.example.librarybsb.R.string.name_)
+                binding.surnameEt.hint =
+                    resources.getString(com.example.librarybsb.R.string.surname_)
+                binding.PhoneEt.hint = resources.getString(com.example.librarybsb.R.string.number_)
+                binding.CardEt.hint =
+                    resources.getString(com.example.librarybsb.R.string.card_)
+                binding.next.text = resources.getString(com.example.librarybsb.R.string.next_)
+
             }
 
-            override fun onNothingSelected(parent: AdapterView<*>?) {
+            override fun onNothingSelected(p0: AdapterView<*>?) {
                 TODO("Not yet implemented")
             }
-        }
 
-
-        binding.next.setOnClickListener{
-            var intent = Intent(this, Code::class.java)
-            startActivity(intent)
-        }
-
-    }
-
-        fun setLocale(localeName: String) {
-                locale = Locale(localeName)
-                val res = resources
-                val dm = res.displayMetrics
-                val conf = res.configuration
-                conf.locale = locale
-                res.updateConfiguration(conf, dm)
-                val refresh = Intent(
-                    this,
-                    MainActivity::class.java
-                )
-                refresh.putExtra(currentLang, localeName)
-                startActivity(refresh)
-
-        }
-
-    override fun onBackPressed() {
-        val intent = Intent(Intent.ACTION_MAIN)
-        intent.addCategory(Intent.CATEGORY_HOME)
-        intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
-        startActivity(intent)
-        finish()
-        exitProcess(0)
+        })
     }
 }

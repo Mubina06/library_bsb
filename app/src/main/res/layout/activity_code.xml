@@ -44,6 +44,7 @@
         app:layout_constraintVertical_bias="0.07999998">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pincode"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
