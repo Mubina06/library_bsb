@@ -26,6 +26,11 @@ class SplashScreen : AppCompatActivity() {
         binding = ActivitySplashScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.next.setOnClickListener{
+            var intent = Intent(this, Code::class.java)
+            startActivity(intent)
+        }
+
 
         getPreferences = getSharedPreferences("lang", MODE_PRIVATE)
         edit = getPreferences.edit()

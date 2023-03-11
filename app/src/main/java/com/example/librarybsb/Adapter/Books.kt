@@ -7,10 +7,10 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.librarybsb.EnumClass.Category
+import com.example.librarybsb.EnumClass.AddEnum
 import com.example.librarybsb.R
 
-class Books(var item_list: Array<Category>) :RecyclerView.Adapter<Books.MyHolder>(){
+class Books(var item_list: Array<AddEnum>) :RecyclerView.Adapter<Books.MyHolder>(){
 
     class MyHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var name = itemView.findViewById<TextView>(R.id.bname)
@@ -32,7 +32,7 @@ class Books(var item_list: Array<Category>) :RecyclerView.Adapter<Books.MyHolder
         holder.name.text = index.name
         holder.img.setImageResource(index.photo)
         holder.price.text = index.price
-        holder.author.text = index.author
+
     }
     override fun getItemCount(): Int {
         return item_list.size
