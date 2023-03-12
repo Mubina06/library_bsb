@@ -1,5 +1,6 @@
 package com.example.librarybsb
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
@@ -24,6 +25,11 @@ class AboutBook : AppCompatActivity() {
             textView.text = book.nom
             imageView.setImageResource(book.photo)
 
+        }
+
+        binding.buy.setOnClickListener{
+            var intent = Intent(this, Buy::class.java)
+            startActivity(intent)
         }
 
 
