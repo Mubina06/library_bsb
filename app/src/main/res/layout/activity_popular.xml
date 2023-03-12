@@ -22,7 +22,7 @@
         android:layout_height="90dp"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="15dp"
-        android:src="@drawable/book1"/>
+        android:src="@drawable/book2"/>
 
 
     <TextView

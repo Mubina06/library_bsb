@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F34A84"
-    tools:context=".Add.Book1">
+    tools:context=".Add.Book4">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -17,14 +17,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.105"
-        app:srcCompat="@drawable/book3" />
+        app:srcCompat="@drawable/book4" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:text="Men Robiya..."
+        android:text="Mukammal kun"
         android:textColor="@color/white"
         android:fontFamily="@font/font1"
         android:textSize="35sp"
@@ -40,7 +40,7 @@
         android:layout_height="127dp"
         android:layout_marginTop="36dp"
         android:fontFamily="@font/font1"
-        android:text="Sen bilan o‘rtamizdagi har narsa maʼmur bo‘lgach, olam bilan o‘rtamdagi hamma narsa xarobaga aylansa-da, farqi yo‘q."
+        android:text="Mazkur asarda ikki kuni bir-biriga o‘xshashini istamagan qizning hikoyasi bilan tanishasiz."
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="25sp"

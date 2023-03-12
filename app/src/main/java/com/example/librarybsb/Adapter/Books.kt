@@ -1,6 +1,5 @@
 package com.example.librarybsb.Adapter
 
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,8 +8,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.librarybsb.EnumClass.AddEnum
+import com.example.librarybsb.EnumClass.Category
 import com.example.librarybsb.R
-import com.example.librarybsb.Read
 
 class Books(var item_list: Array<AddEnum>) :RecyclerView.Adapter<Books.MyHolder>(){
 
@@ -32,7 +31,7 @@ class Books(var item_list: Array<AddEnum>) :RecyclerView.Adapter<Books.MyHolder>
 
     override fun onBindViewHolder(holder: MyHolder, position: Int) {
         val index= item_list[position]
-        holder.name.text = index.name
+        holder.name.text = index.nom
         holder.img.setImageResource(index.photo)
         holder.price.text = index.price
 

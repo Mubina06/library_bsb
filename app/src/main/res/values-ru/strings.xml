@@ -12,4 +12,9 @@
     <string name="grab_a_book">Возьмите книгу!</string>
     <string name="search_title_genre_or_author">Поиск по названию, жанру или автору...</string>
     <string name="popular_now">Популярно сейчас</string>
+    <string name="mystery">Тайна</string>
+    <string name="adventure">Приключение</string>
+    <string name="comdey">Комедия</string>
+    <string name="detactive">Детектив</string>
+    <string name="fantasy">Фантастика</string>
 </resources>

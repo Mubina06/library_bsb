@@ -12,6 +12,24 @@
         android:theme="@style/Theme.LibraryBsb"
         tools:targetApi="31">
         <activity
+            android:name=".Buy"
+            android:exported="false" />
+        <activity
+            android:name=".AboutBook"
+            android:exported="false" />
+        <activity
+            android:name=".Book7"
+            android:exported="false" />
+        <activity
+            android:name=".Book6"
+            android:exported="false" />
+        <activity
+            android:name=".Book5"
+            android:exported="false" />
+        <activity
+            android:name=".Book4"
+            android:exported="false" />
+        <activity
             android:name=".Read"
             android:exported="false" />
         <activity

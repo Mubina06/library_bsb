@@ -12,4 +12,9 @@
     <string name="grab_a_book">Kitob oling!</string>
     <string name="search_title_genre_or_author">Sarlavha, janr yoki muallifni qidiring...</string>
     <string name="popular_now">Hozir mashhur</string>
+    <string name="mystery">Sirli</string>
+    <string name="adventure">Sarguzasht</string>
+    <string name="comdey">Komediya</string>
+    <string name="detactive">Detaktiv</string>
+    <string name="fantasy">Fantastka</string>
 </resources>

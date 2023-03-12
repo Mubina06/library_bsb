@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.librarybsb.Adapter.Books
 import com.example.librarybsb.EnumClass.AddEnum
-import com.example.librarybsb.EnumClass.Category
 import com.example.librarybsb.databinding.ActivityCrimeBinding
 
 class Crime : AppCompatActivity() {

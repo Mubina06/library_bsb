@@ -3,7 +3,7 @@ package com.example.librarybsb.EnumClass
 import com.example.librarybsb.R
 
 enum class AddEnum ( var nom: String, var photo: Int, var price: String, var author: String){
-    BARKAMOL("Barkamol farzand tarbiyasi", R.drawable.book1, "35.000 sum", "Tongar"),
+    BARKAMOL("Barkamol farzand tarbiyasi", R.drawable.book2, "35.000 sum", "Tongar"),
     TUNGI("Tungi suhbatlar", R.drawable.book2, "40.000 sum", "Adham Sharqoviy"),
     ROBIYA("Men Robiya", R.drawable.book3, "42.000 sum", "Sa'diya Erol"),
     MUKAMMAL("Mukammal kun", R.drawable.book4, "30.000 sum", "Oyshagul Oqgun"),

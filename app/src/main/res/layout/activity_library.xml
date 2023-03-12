@@ -90,7 +90,6 @@
         app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toTopOf="parent" />
 
-
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv"
             android:layout_width="match_parent"
@@ -105,12 +104,11 @@
             app:layout_constraintVertical_bias="0.069"
             tools:listitem="@layout/activity_popular" />
 
-
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="212dp"
+        android:layout_marginTop="180dp"
         android:fontFamily="@font/font1"
         android:text="@string/popular_now"
         android:textColor="@color/black"
@@ -124,14 +122,14 @@
         android:id="@+id/crime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="104dp"
         android:background="#FFA776"
         android:fontFamily="@font/font1"
-        android:text="Crime"
+        android:text="@string/detactive"
         android:textColor="@color/black"
         android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.224"
+        app:layout_constraintHorizontal_bias="0.277"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/view3" />
 
@@ -139,61 +137,58 @@
         android:id="@+id/comedy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="28dp"
         android:background="#FFD787"
         android:fontFamily="@font/font1"
-        android:text="Comdey"
+        android:text="@string/comdey"
         android:textColor="@color/black"
         android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.468"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/crime" />
+        app:layout_constraintTop_toTopOf="@+id/view3" />
 
     <TextView
         android:id="@+id/fantasy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="24dp"
         android:background="#CFADE8"
         android:fontFamily="@font/font1"
-        android:text="Fantasy"
+        android:text="@string/fantasy"
         android:textColor="@color/black"
         android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/comedy"
-        app:layout_constraintTop_toTopOf="@+id/view3" />
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toEndOf="@+id/crime"
+        app:layout_constraintTop_toBottomOf="@+id/adventure" />
 
     <TextView
         android:id="@+id/mystery"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
         android:background="#ABE5BC"
         android:fontFamily="@font/font1"
-        android:text="Mystery"
+        android:text="@string/mystery"
         android:textColor="@color/black"
         android:textSize="35sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.189"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/comedy" />
+        app:layout_constraintTop_toTopOf="@+id/view3" />
 
     <TextView
         android:id="@+id/adventure"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         android:background="#FFA89A"
         android:fontFamily="@font/font1"
-        android:text="Adventure"
+        android:text="@string/adventure"
         android:textColor="@color/black"
         android:textSize="35sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.735"
+        app:layout_constraintEnd_toStartOf="@+id/comedy"
         app:layout_constraintStart_toEndOf="@+id/mystery"
-        app:layout_constraintTop_toBottomOf="@+id/comedy" />
+        app:layout_constraintTop_toTopOf="@+id/view3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

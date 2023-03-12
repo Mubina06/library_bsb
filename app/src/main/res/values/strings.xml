@@ -15,4 +15,9 @@
     <string name="grab_a_book">Grab a book!</string>
     <string name="search_title_genre_or_author">Search title, genre or author...</string>
     <string name="popular_now">Popular Now</string>
+    <string name="mystery">Mystery</string>
+    <string name="adventure">Adventure</string>
+    <string name="comdey">Comdey</string>
+    <string name="detactive">Detactive</string>
+    <string name="fantasy">Fantasy</string>
 </resources>

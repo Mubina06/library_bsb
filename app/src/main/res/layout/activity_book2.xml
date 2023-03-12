@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:text="Barkamol farzand tarbiyasi"
+        android:text="Tungi suhbatlar"
         android:textColor="@color/white"
         android:fontFamily="@font/font1"
         android:textSize="35sp"
@@ -36,11 +36,11 @@
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="318dp"
-        android:layout_height="127dp"
+        android:layout_width="338dp"
+        android:layout_height="142dp"
         android:layout_marginTop="36dp"
         android:fontFamily="@font/font1"
-        android:text="Asarda bolalikning ilk yillaridanoq tarbiyaning pedagogik va diniy jihatlari qanday bo‘lishi kerakligi bayon qilingan."
+        android:text="Shuning uchun insonlarga qilgan yaxshiliklaringni qumga yoz. Insonlar senga qilgan yaxshiliklarini toshga yozki, doimo o’qib tur!"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="25sp"
