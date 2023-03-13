@@ -50,35 +50,48 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/name"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-        android:layout_width="361dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="20dp"
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/searchE"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
+<!--        android:layout_width="361dp"-->
+<!--        android:layout_height="54dp"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:hint="@string/search_title_genre_or_author"-->
+<!--        app:startIconDrawable="@drawable/ic_baseline_search_24"-->
+<!--        app:boxBackgroundColor="@color/white"-->
+<!--        app:boxCornerRadiusBottomEnd="20dp"-->
+<!--        app:boxCornerRadiusBottomStart="20dp"-->
+<!--        app:boxCornerRadiusTopEnd="20dp"-->
+<!--        app:boxCornerRadiusTopStart="20dp"-->
+<!--        app:endIconMode="clear_text"-->
+<!--        app:hintTextColor="#F34A84"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView5"-->
+<!--        app:layout_constraintVertical_bias="0.01999998"-->
+<!--        tools:ignore="MissingConstraints">-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/search"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent" />-->
+
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+<!--    -->
+
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/searchviewv"
+        tools:ignore="MissingConstraints"
         android:hint="@string/search_title_genre_or_author"
-        app:startIconDrawable="@drawable/ic_baseline_search_24"
-        app:boxBackgroundColor="@color/white"
-        app:boxCornerRadiusBottomEnd="20dp"
-        app:boxCornerRadiusBottomStart="20dp"
-        app:boxCornerRadiusTopEnd="20dp"
-        app:boxCornerRadiusTopStart="20dp"
-        app:endIconMode="clear_text"
-        app:hintTextColor="#F34A84"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.01999998"
-        tools:ignore="MissingConstraints">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-
-    </com.google.android.material.textfield.TextInputLayout>
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="128dp" />
 
     <View
         android:layout_width="102dp"

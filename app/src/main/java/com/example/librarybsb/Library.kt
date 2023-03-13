@@ -3,6 +3,8 @@ package com.example.librarybsb
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ArrayAdapter
+import android.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.librarybsb.Adapter.Adapter
 import com.example.librarybsb.EnumClass.Category
@@ -38,6 +40,34 @@ class Library : AppCompatActivity() {
 
         val adapter=Adapter(list)
         binding.rv.adapter = adapter
+
+        val books = arrayOf("Barkamol farzand tarbiyasi", "Tungi suhbatlar", "Men Robiya", "Mukammal kun", "Muso")
+        val bookAdapter : ArrayAdapter<String> = ArrayAdapter(this, android.R.layout.simple_list_item_1, books)
+
+
+//        *******
+
+//        binding.rv.adapter = bookAdapter
+//
+//        shu nimagadir oxshamayapti!!!!
+
+
+        binding.searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener,
+            androidx.appcompat.widget.SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                binding.searchView.clearFocus()
+                if (books.contains(query)){
+                    bookAdapter.filter.filter(query)
+                }
+                return false
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                bookAdapter.filter.filter(newText)
+                return false
+            }
+
+        })
 
 
         adapter.onItemClick = {
