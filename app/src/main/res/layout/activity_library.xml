@@ -87,11 +87,14 @@
         android:id="@+id/searchView"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
         android:background="@drawable/searchviewv"
-        tools:ignore="MissingConstraints"
         android:hint="@string/search_title_genre_or_author"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="128dp" />
+        app:layout_constraintBottom_toTopOf="@+id/view3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.515"
+        tools:ignore="MissingConstraints" />
 
     <View
         android:layout_width="102dp"

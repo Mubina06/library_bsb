@@ -20,4 +20,9 @@
     <string name="comdey">Comdey</string>
     <string name="detactive">Detactive</string>
     <string name="fantasy">Fantasy</string>
+    <string name="muqova_yumshoq">Muqova : Yumshoq</string>
+    <string name="o_lchami_13x15">O\'lchami : 13x15</string>
+    <string name="sahifa_209_bet">Sahifa : 209 bet</string>
+    <string name="narxi_40_000_sum">Narxi : 40.000 sum</string>
+    <string name="buy">Buy</string>
 </resources>

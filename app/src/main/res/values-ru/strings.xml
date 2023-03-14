@@ -17,4 +17,9 @@
     <string name="comdey">Комедия</string>
     <string name="detactive">Детектив</string>
     <string name="fantasy">Фантастика</string>
+    <string name="muqova_yumshoq">Обложка: Мягкая</string>
+    <string name="o_lchami_13x15">Размер: 13x15</string>
+    <string name="sahifa_209_bet">Страница: 209 страниц</string>
+    <string name="narxi_40_000_sum">Цена: 40 000 сум</string>
+    <string name="buy">Купить</string>
 </resources>

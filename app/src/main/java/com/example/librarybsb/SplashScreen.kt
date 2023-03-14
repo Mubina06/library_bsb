@@ -9,6 +9,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import android.widget.Toast
 import com.example.librarybsb.databinding.ActivitySplashScreenBinding
 import com.google.gson.reflect.TypeToken
 import java.lang.reflect.Type
@@ -27,9 +28,17 @@ class SplashScreen : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.next.setOnClickListener{
+            if (binding.nameEt.text != null || binding.CardEt.text != null || binding.surnameEt.text != null || binding.PhoneEt.text != null) {
+                val intent = Intent(this, Code::class.java)
+                startActivity(intent)
+            } else {
+                Toast.makeText(this, "Register?", Toast.LENGTH_LONG).show()
+            }
+
             var intent = Intent(this, Code::class.java)
             startActivity(intent)
         }
+
 
 
         getPreferences = getSharedPreferences("lang", MODE_PRIVATE)
@@ -38,7 +47,7 @@ class SplashScreen : AppCompatActivity() {
         val lang1 = getPreferences.getString("lang", "En")
 
         list.add("En")
-        list.add("Ru")
+        list.add("Rus")
         list.add("Uz")
 
 
